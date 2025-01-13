@@ -1,0 +1,11 @@
+entityDef "one_modmold"
+{
+	class				dmEncounterData
+	modmans_mod_mold	1
+}
+
+entityDef "some_modmolds"
+{
+	class				dmEncounterData
+	modmans_mod_mold	1d4+1
+}

@@ -1,0 +1,14 @@
+entityDef "modmans_set"
+{
+	set	modmans
+
+	setname "Modman's Megaset"
+
+	desc_2	"A cool thing!"
+	desc_4	"An even cooler thing!"
+
+	pieces 4
+
+	effect_2 modmans_2p_bonus
+	effect_4 modmans_4p_bonus
+}

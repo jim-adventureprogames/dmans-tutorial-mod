@@ -1,0 +1,60 @@
+entityDef "perk_mod_magic_01"
+{
+	class dmPerk
+
+	classrank mod_magic,1
+	
+	power_1	sp_mod_magic_power_01
+
+	name "Power 01"
+	description "Grants the first cool mod power!"
+	flavor "^6Best^7"
+	
+	//classfeature_1	ire
+
+	grantedpower "sp_mod_magic_power_01"
+
+	icon modmans_perk_01
+
+}
+
+entityDef "perk_mod_magic_02"
+{
+	class dmPerk
+
+	classrank mod_magic,2
+	
+	power_1	sp_mod_magic_power_01
+    power_2	sp_mod_magic_power_02
+
+	name "Power 02"
+	description "Grants the second cool mod power!"
+	flavor "^6Bester^7"
+	
+	grantedpower "sp_mod_magic_power_02"
+
+	icon modmans_perk_02
+
+}
+
+entityDef "perk_mod_magic_03"
+{
+	class dmPerk
+
+	classrank mod_magic,3
+	
+	power_1	sp_mod_magic_power_01
+    power_2	sp_mod_magic_power_02
+    power_3	sp_mod_magic_power_03
+
+	name "Power 03"
+	description "Grants the last cool mod power!"
+	flavor "^6Bestest^7"
+	
+	//classfeature_1	ire
+
+	grantedpower "sp_mod_magic_power_03"
+
+	icon modmans_perk_03
+
+}

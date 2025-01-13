@@ -1,0 +1,10 @@
+entityDef "modmans_npc_academy_cat"
+{
+	class				dmTownsmans
+	bBlockTileEntry		true
+	sprite				modmans_npc_academy_cat
+	name				"Cat"
+	health				9999
+	bBlockSameArchetype false
+	dialog_onBumped		modplot_dialog_academy_cat_default
+}

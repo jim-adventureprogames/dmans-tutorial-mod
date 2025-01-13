@@ -1,0 +1,39 @@
+// Special powers are tricky, many of them run on data alone, like this one below.
+// But the more complicated ones require code, which can't be accessed just yet.
+//
+// In this case, the creature will do 10 melee attacks at -90% power each, while pushing the 
+// victim back 10 spaces.
+//
+
+entityDef "sp_so_many_bites"
+{
+	class		dmSpecialPower
+	
+	powername	"So Many Bites!"
+	menudescription "No one will read this, it is a monster power!"
+	
+	nummeleeattacks 10
+
+	damagemod -0.9
+	
+	selectRange 1
+	
+	bullrush 10
+	
+	hitTargetEmitter axe_flurry_emitter
+	
+	script		modmans_mods.somanybites
+	
+}
+
+entityDef "sp_modplot_pete_lucky_bell"
+{
+	class		dmSpecialPower
+	
+	powername	"Pete's Lucky Bell"
+	menudescription "No one will read this either, it's an item power."
+	
+	summonally_01	"friendly_skelebro,3d2"
+	summonally_02	"skeleton_cryo_03,1d2"
+	
+}

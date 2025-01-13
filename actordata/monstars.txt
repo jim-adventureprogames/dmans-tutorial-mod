@@ -1,0 +1,36 @@
+entityDef "modmans_mod_mold"
+{
+	class			dmMonster
+	bBlockTileEntry	true
+	sprite			modmans_mod_mold_sprite
+	name			"Mod Mold"
+	health			24
+	cointype		copper_coins_small
+	
+	level			2
+	
+	scale_min		1
+	scale_max		3
+
+	scale_adjusthealth	-0.1
+	scale_adjustdamage	-0.1
+	
+	meleedamage_01		melee,1,0
+	meleedamage_02		poison,1,0
+
+	nametable		critter_name_chart
+	hasRanged		false
+
+	knowledge		lesser_beasts
+
+	base_defeatarmor	2
+
+	basicattackparticle	particle_attack_weapon_pierce
+	attack_sfx			monster_attack_claw
+
+	power_01			sp_so_many_bites
+
+	steakdata			"100,0,1,sp_so_many_bites"
+
+	banter			creature
+}

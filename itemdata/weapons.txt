@@ -1,0 +1,18 @@
+entityDef "modmans_weapon_1h_axe_t6"
+{
+	class			dmWeapon
+	
+	name			"BEST MOD GODAXE"
+	unidName		"BEST MOD GODAXE"
+	sprite			modmans_weapon_1h_axe_t6
+	damage			"666d666"
+	flavorText		"Best weapon, good balance, finally Dungeonmans is a good game."
+	identified		false
+	hands			1
+	value			666666666666
+	attackparticle  particle_attack_weapon_slash
+
+	info1			1h
+	info2			axe
+	tier			6
+}

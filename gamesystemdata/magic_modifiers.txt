@@ -1,0 +1,72 @@
+//
+//
+//	str,skl,sci,foom	- add (or subtract!) points from a stat
+//
+//	damagedealt_xx	[type],[dice],[percent modifier]
+//
+//	most all percent modifiers are 0.0 centric, meaning 0.2 == 20% increase, -0.2 == 20% decrease.
+
+//  ignore this /n but not this
+
+
+entityDef "mm_modmans_smarty_01"
+{
+	class dmMagicModifier
+	
+	prefix "Smarty"
+
+	sci	64
+
+}
+
+
+
+
+//	Here's an example of a modifier with a proc -- something that can happen X% of the time.
+//
+//	New procs require code, so you can't make any yet, but if you wanted to make a modifier that used an existing
+//	one, go ahead. 
+//
+//	proc_on_hit 	[name of proc],[chance on hit, where 1.0 is 100%],"[Text to display on the enchanted item.]"
+//
+//  entityDef "mm_doomsting_weapon_01"
+//  {
+//  	class dmMagicModifier
+//  	prefix "Doomswarm"
+//  	damagedealt_01 dark,2d4,0
+//  	proc_on_hit		doomsting_proc_01,0.05,"Rarely blasts your foes with bees."
+//  }
+  
+
+entityDef mm_modmans_staff
+{
+	class dmMagicModifier
+	
+	str			1
+	wargear	true
+
+}
+
+entityDef mm_modmans_glove
+{
+	class dmMagicModifier
+	
+	skl			1
+	wargear	true
+
+}
+
+entityDef mm_modmans_chest
+{
+	class dmMagicModifier
+	sci			1
+	wargear	true
+}
+
+entityDef mm_modmans_helm
+{
+	class dmMagicModifier
+	
+	foom		1
+	wargear	true
+}

@@ -1,0 +1,8 @@
+entitydef "modmans_npc_academy_cat"
+{
+	texturename npc_sprites
+	xloc 0
+	yloc 0
+	width 80
+	height 128
+}

@@ -1,0 +1,39 @@
+entityDef "modmans_change_tt_scrobold_weapons_1"
+{
+	addtotable_01	tt_scrobold_weapons_1
+	
+	"modmans_weapon_1h_axe_t6"			99999999   
+}
+
+entityDef "modmans_warrens_encounters"
+{
+	addtotable_01	encounter_list_scrobold_01
+	addtotable_02	encounter_list_scrobold_02
+	addtotable_03	encounter_list_scrobold_03
+
+	"one_modmold"		10
+	"some_modmolds"		10
+
+}
+
+//good_prefix_tables.txt has the tables where enchantments live, that's 
+//what you want to modify to add your own enchantments to the game.
+
+entityDef "modmans_change_generic_good_prefixes_weapons_01"
+{
+	addtotable_01	tt_generic_good_prefixes_weapons_01
+	
+	mm_modmans_smarty_01	1000
+
+}
+
+// To modify the armory hammer table, your key must be
+// "[enchantment],[weapon|armor],[1-5 rank of metal used to make hammer]"
+// and your value should be 0.
+
+entityDef "modmans_change_armory_table"
+{
+	addtotable_01	armory_hammer_table
+	
+	"mm_modmans_smarty_01,weapon,1"	0
+}

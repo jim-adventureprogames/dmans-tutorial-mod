@@ -1,0 +1,68 @@
+{
+  "archetypeName": "modmans_mod_overworld",
+  "friendlyName": "Finally A Good Overworld",
+  "description": "I, the clever modder, have finally created the correct style of overworld.",
+  "worldSize":  "81,81",
+  
+  "bBlockOffDreadSpireWithMountains": false,
+  "bPlaceBadlandsAroundDreadSpire": true,
+  "bHideDreadSpireAtStart": false,
+  
+  "stellarAnvilQuest":
+  {
+    "bHideUntilDiscovered": false,
+    "minRange": "30,8",
+    "maxRange": "80,80"
+  },
+  
+  "standardTownGenerationInfo":
+  {
+    "numTowns":  20,
+    "gatewayArchetype": "simple_town",
+    "townArchetype":  "town_generation_data",
+    "minRange": "5,5",
+    "maxRange": "80,80"
+  },
+
+  "portTownGenerationInfo":
+  {
+    "numTowns":  3,
+    "gatewayArchetype": "simple_town",
+    "townArchetype":  "town_generation_data",
+    "minRange": "0,0",
+    "maxRange": "48,48"
+  },
+    
+  "plotLocations":
+  [
+    {
+      "plotName": "academy",
+	  "minRange": "30,30",
+	  "maxRange": "50,50"
+    },
+    {
+      "plotName": "dread_spire",
+      "location": "72,12"
+    }
+  ],
+  "dungeonLocations":
+  [
+    {
+      "areaName": "Convenient Scrobold Warren",
+      "areaArchetype": "scrobold_warren",
+      "location": "13,10"
+    },
+    {
+      "areaName": "The Ookfells",
+      "areaArchetype": "standard_dungeon_a",
+      "location": "16,10"
+    }
+  ],
+  "townLocations":
+  [
+    {
+      "areaArchetype": "town_generation_data",
+      "location": "10,14"
+    }
+  ]
+}

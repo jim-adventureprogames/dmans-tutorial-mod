@@ -1,0 +1,34 @@
+entityDef "mod_syllabus_modmans"
+{
+    class dmSyllabus
+    
+    button              mastery_button_modmans
+    background          ui_mastery_banner_modmans
+    category            mod_magic
+    title               "Elite Mod Powers"
+    
+    mastery_01          mastery_mod_magic
+    
+    func_determinerank  modmans_mods.GetTitleForModmansRank
+}
+
+entityDef "modmans_curriculum"
+{
+    class   dmCurriculum
+    modify  true
+    add_01  mod_syllabus_modmans
+    
+    // remove_01 syllabus_adventure_101
+    // remove_02 syllabus_armor
+    // remove_03 syllabus_fightermans
+    // remove_04 syllabus_wizardmans
+    // remove_05 syllabus_rangermans
+    // remove_06 syllabus_necromansy
+    // remove_07 syllabus_bannermans
+    // remove_08 syllabus_southern_gentlemans
+    // remove_09 syllabus_psychomanser
+    // remove_10 syllabus_outdoorsmans
+    // remove_11 syllabus_field_work
+    // remove_12 syllabus_masters_program
+        
+}

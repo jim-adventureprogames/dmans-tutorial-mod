@@ -1,0 +1,42 @@
+entitydef "modmans_perk_01"
+{
+	texturename power_icons
+	xloc 1
+	yloc 1
+	width 48
+	height 48
+}
+
+entitydef "modmans_perk_02"
+{
+	texturename power_icons
+	xloc 1
+	yloc 51
+	width 48
+	height 48
+}
+
+entitydef "modmans_perk_03"
+{
+	texturename power_icons
+	xloc 1
+	yloc 101
+	width 48
+	height 48
+}
+
+entitydef "mastery_button_modmans"
+{
+	texturename mastery_button_modmans
+	xloc 0
+	yloc 0
+	width 100
+	height 70
+}
+
+entitydef "ui_mastery_banner_modmans"
+{
+	texturename ui_banner_modmans
+	width 256
+	height 512
+}

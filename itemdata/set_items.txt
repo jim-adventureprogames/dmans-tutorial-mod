@@ -1,0 +1,92 @@
+entityDef "modmans_staff"
+{
+	class			dmWizardStaff
+	
+	name			"Modmans Staff"
+	unidName		"Modmans Staff"
+	sprite			set_scorpomans_staff
+	damage			"0"
+	flavorText		"A well balanced player made staff."
+	identified		true
+
+	tier			4
+	uniqueitem		true
+
+	spellpower		80
+
+	attackparticle		wizard_staff_blast_quick
+	value				1348
+
+	magicmodifier_01	mm_modmans_staff
+
+	range				3
+
+	info1			2h
+	info2			wizardstaff
+
+	itemset			modmans
+}
+
+entityDef "modmans_chest"
+{
+	class			dmArmor
+
+	name			"Modmans Shirt"
+	sprite			set_scorpomans_chest
+	armorvalue		60
+	dodgevalue		25
+
+	magicmodifier_01	mm_modmans_chest
+
+	flavorText		"A well balanced player made chest piece."
+	identified		true
+	value			275
+	info1			heavyarmor
+	tier			4
+	uniqueitem		true
+
+	itemset			modmans
+}
+
+
+entityDef "modmans_helm"
+{
+	class			dmHelm
+	info1			helm
+	name			"Modmans Hat"
+	sprite			set_scorpomans_hood
+
+	healthbonus		0.10
+
+	magicmodifier_01	mm_modmans_helm
+
+	flavorText		"A hat made by someone who really knows what they are doing!"
+
+	identified		true
+	value			275
+	tier			4
+	uniqueitem		true
+
+	itemset			modmans
+}
+
+entityDef "modmans_gloves"
+{
+	class			dmGlove
+	info1			glove
+
+	name			"Modmans Gloves"
+	sprite			set_scorpomans_claw
+
+	magicmodifier_01	mm_modmans_glove
+
+	flavorText		"Excellent gloves that totally look like the sprite being used."
+
+	identified		true
+	value			275
+	tier			4
+	uniqueitem		true
+
+	defeatarmor		18
+	itemset			modmans
+}

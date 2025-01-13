@@ -1,0 +1,42 @@
+entityDef "modmans_2p_bonus"
+{
+	class	dmStatusEffect
+	
+	appliedtext "^5[victim]^7 loves modded items!"
+	statuscode "Modmans 2p"
+
+	sci	1
+
+	endless	true
+
+	charsheetname	"Modmans Megaset 2p"
+	charsheetdesc	"+1 Science"
+}
+
+entityDef "modmans_4p_bonus"
+{
+	class	dmStatusEffect
+	
+	appliedtext "^5[victim]^7 can finally play the game as intended."
+	statuscode "Modmans 4p"
+
+	sci	64
+
+	endless	true
+
+	charsheetname	"Modmans Megaset 4p"
+	charsheetdesc	"+64 Science!"
+}
+
+entityDef "modmans_ai_changer_effect"
+{
+	class	dmStatusEffect
+	
+	appliedtext "^5[victim]^7 is using script to decide how to move."
+	
+	duration	5
+	
+	script_aimovement	modmans_mods.only_move_left
+	react_takehit	modmans_mods.yell_about_being_hit
+
+}

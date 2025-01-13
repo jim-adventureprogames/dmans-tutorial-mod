@@ -1,0 +1,14 @@
+{
+	"modplot_dialog_academy_cat_default": {
+		"classType": "dmDialogData",
+		"title": "Totally Normal Cat",
+		"soundToPlay": "cat_meow",
+		"message": "Hello, uh, I mean, meow. I am totally normal cat added to the Academy via modding.",
+		"responses": [
+			{
+				"message": "Hello normal cat.",
+				"responseScript": "none"
+			}
+		]
+	}
+}

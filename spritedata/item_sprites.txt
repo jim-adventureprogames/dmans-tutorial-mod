@@ -1,0 +1,15 @@
+entitydef "modplot_item_shovel_handle_sprite"
+{
+	texturename weapon_sprites
+	xloc 64
+	yloc 0
+
+}
+
+entitydef "modplot_item_pete_reward_sprite"
+{
+	texturename weapon_sprites
+	xloc 128
+	yloc 0
+
+}

@@ -1,0 +1,38 @@
+entityDef "modplot_item_shovel_handle"
+{
+	class			dmNonAcademyTurnIn
+
+	name			"Broken Shovel Handle"
+	sprite			modplot_item_shovel_handle_sprite
+
+	description		"A fancy yet clearly broken shovel handle."
+
+	flavorText		"Someone who really likes shovels spent some time with this. The handle has precious metal inlays and you can read the initals S.D.P. Hmm."
+
+	identified		true
+	value			1
+
+	stackable		true
+	
+	plotthread_advance	"modplot,found_mod_plot_item"
+}
+
+entityDef "modplot_item_pete_reward"
+{
+	class			dmConsumable
+
+	name			"Pete's Lucky Bell"
+	sprite			modplot_item_pete_reward_sprite
+	
+	description		"Ring this lucky bell to summon some shambling undead help in time of need." 
+	
+	flavortext		"..."
+	
+	uses			1
+	
+	itemtype		"Summoning Bell"
+	value			1
+	itemrank		5
+
+	power_1			sp_modplot_pete_lucky_bell
+}

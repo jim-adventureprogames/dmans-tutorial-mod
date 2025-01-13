@@ -1,0 +1,19 @@
+
+// headmaster
+// librarian
+// alchemist
+// curator
+// research
+// armorer
+// gravedigger
+// battlemaster
+// hatch
+// pigfarmer
+
+
+entityDef "modmans_academy_data"
+{
+	class	dmAcademyExtraData
+	
+	"extraactor_01"		"modmans_npc_academy_cat,headmaster"
+}

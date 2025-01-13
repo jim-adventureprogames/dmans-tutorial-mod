@@ -1,0 +1,69 @@
+{
+  "modplot": 
+  {
+    "classType": "dmPlotThread",
+    "plotStateLookup":
+    {
+      "unstarted":  0,
+      "found_mod_plot_item":  100,
+      "talked_to_gravedigger":  200
+    },
+    "dialogHooks":
+    [
+      {
+        "targetArc":  "npc_academy_gravedigger",
+        "stateEquals":  "found_mod_plot_item",
+        "dialogOptions":
+        [
+          {
+            "message": "I found something that might maybe belong to you.",
+            "responseScript": "modplot_script_talk_pete_01"
+          }
+        ]
+      }
+    ],
+	"dropItemHooks":
+	[
+	  {
+		"stateEquals": "unstarted",
+		"targetMonsterKnowledge":
+		[
+		  "undeads"
+		],
+		"dropArchetype": "modplot_item_shovel_handle",
+		"dropChance": "0.05"
+	  }
+	]
+  },
+  
+  "modplot_script_talk_pete_01":
+  {
+    "classType":  "dmPlotScript",
+    "setThisState": "talked_to_gravedigger",
+    "dialogArchetype":  "modplot_dialog_pete_says_thanks",
+    "removeItems":
+    {
+      "modplot_item_shovel_handle": 1
+    },
+    "tossItems":
+    {
+      "modplot_item_pete_reward": 1
+    }
+  },
+  
+  "modplot_dialog_pete_says_thanks":
+  {
+	"classType": "dmDialogData",
+    "title":  "Getting A Handle On Things",
+    "message":  "Get out of here! You gotta be kidding me! That's the back half of Meatmulchin' Betty, my favorite shovel for years! Some clown student stole it from me years ago and tried to dig a ditch in a limestone patch. They came back with nothing more than the front half and a basket of tearful excuses. I killed them.\n\nHa! No. I didn't kill them.\n\nThe scrobolds did. Anyway, here's a trinket for yer troubles, don't die with it sitting unused in your backpack.",
+    "soundToPlay": "necro_bell",
+    "instigatorSprite": "npc_academy_gravedigger",
+    "responses":
+    [
+      {
+        "message": "I always use my consumables! And consume my usables!",
+        "responseScript": "none"
+      }
+    ]
+  }
+}

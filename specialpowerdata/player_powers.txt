@@ -1,0 +1,61 @@
+entityDef "sp_mod_magic_power_01"
+{
+	class		dmSpecialPower
+	
+	powername	"Mod Power 01"
+	menudescription "What a great power"
+	
+    icon	modmans_perk_01
+}
+
+entityDef "sp_mod_magic_power_02"
+{
+	class		dmSpecialPower
+	
+	powername	"Mod Power 02"
+	menudescription "What a great power"
+	
+	icon    modmans_perk_02
+}
+
+entityDef "sp_mod_magic_power_03"
+{
+	class		dmSpecialPower
+	
+	powername	"Mod Power 03"
+	menudescription "What a great power"
+	
+	icon    modmans_perk_03
+}
+
+entityDef "sp_modmans_quick_dash"
+{
+	class		dmSpecialPower
+	
+	powername	"Quicker Dash"
+	menudescription "This power is good now because I modded it."
+	
+	selectRange 7
+	dash creatures
+	movespeed_self 36.0
+
+	rotateduringtravel 1440
+
+	requiresarmor	mediumarmor
+
+	selfstatuseffect arrow_time_brief
+
+	rayblockedbyobstacles	true
+
+	raylength -1
+	raybounces 0
+
+	targettile_01	empty
+	targettile_02	in_los
+
+	ai_escapepower	true
+	
+	stamcost	0
+
+	icon	1,3
+}

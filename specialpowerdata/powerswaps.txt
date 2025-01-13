@@ -1,0 +1,6 @@
+entityDef "modmans_powerswaps"
+{
+    class   dmModPowerSwapList
+    
+    swap_01 "sp_quick_dash,sp_modmans_quick_dash"
+}

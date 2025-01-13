@@ -1,0 +1,9 @@
+entityDef "bti_modmans_bestbirds"
+{
+    class		    dmBirdTextureInfo
+	name            "Modmans Best Birds"
+
+    basetexture     birds_wjdk
+    masktexture     birds_wjdk_mask
+
+}

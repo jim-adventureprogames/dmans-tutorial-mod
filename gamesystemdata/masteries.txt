@@ -1,0 +1,14 @@
+entityDef "mastery_mod_magic"
+{
+	class dmMastery
+	
+	masteryName "Mod Magic"
+	masteryDescription "Do great and powerful things via the might of Dungeonmans Modding Magic!"
+	
+	maxperks 3
+	
+	perk1 perk_mod_magic_01
+	perk2 perk_mod_magic_02
+    perk3 perk_mod_magic_03
+
+}

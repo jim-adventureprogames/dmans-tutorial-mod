@@ -1,0 +1,8 @@
+entitydef "modmans_mod_mold_sprite"
+{
+	texturename monster_sprites
+	xloc 0
+	yloc 0
+	width 80
+	height 128
+}
