@@ -11,7 +11,7 @@
 // pigfarmer
 
 
-entityDef "modmans_academy_data"
+entityDef "modmans_academy_extra_data"
 {
 	class	dmAcademyExtraData
 	

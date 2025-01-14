@@ -2,6 +2,26 @@ using DungeonMans;
 
 namespace modmans_mods
 {
+	public class dmModAcademy : dmAcademy
+	{
+		public override void GenerateWorld(int WorldGenSeed, dmGame _theGame, string strAreaName, int floorNum,
+			string strAreaData, int iBaseThreat)
+		{
+			InitializeFromData(_theGame);
+			genData = (dmDungeonData)theGame.GetNewGenerationDataArchetype(strAreaData);
+			GenerateClearDungeonBaseMap(genData.terrainTileTypes[(int)TerrainType.TT_FLOOR], true);
+			dunData = (dmDungeonData)genData;
+
+			//Figure out what we need from mods. 
+			extraModActorsDictionary = dmAcademyExtraData.CompileExtraActorsDictionary();
+
+			//make an open square area in the center of the map
+			BuildAcademyRoom(9, 12, 25, 25, true);
+			
+			startLocation = new LocValue(25, 25);
+		}
+	}
+
 	public partial class ScriptFunctions
 	{
 		public static bool DoCoolDmansStuff()

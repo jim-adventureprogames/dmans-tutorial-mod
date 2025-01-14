@@ -1,0 +1,42 @@
+entityDef "modmans_mod_dungeon_a"
+{
+	class		dmDungeonData
+
+	worldArchetype	modmans_mods.DungeonTypeA
+
+	overworldmap_name	"Mod Fortress"
+
+	
+	doorType			simple_door
+	chestType   		chest_wooden
+	baseGroundType		red_warren_floor
+	numFloors	3
+
+	entrystringtable	warren_entry_flavor
+
+		
+	stairsdowntype					warrens_stairs_down
+	stairsuptype					warrens_stairs_up
+	overworldGatewaySprite			gateway_warren
+
+	
+	treasureTable					scrobold_warren_master_treasure_table,50
+	encountertable					scrobold_dungeon_master_table
+
+	
+	bgColor							"0,0,0" 
+	unlitColor						"112,128,144"
+
+	track_entry						dungeon_entry_01
+	track_bgm						dungeon_loop_01
+
+	allowclaiming   true
+	bossarchetype	scrobold_berserker
+
+	
+	tt_wall		red_warren_wall
+	tt_floor    red_warren_floor
+	tt_door		cave_floor
+	tt_hallway	cave_floor
+	tt_dungeon_base dungeon_base
+}
