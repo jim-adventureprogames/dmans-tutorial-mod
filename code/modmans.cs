@@ -48,6 +48,8 @@ namespace modmans_mods
 		public static bool somanybites(dmActor invoker, LocValue startLoc, LocValue endLoc)
 		{
 			dmUtilities.AddStringToLog( invoker.Name + " is doing so many bites!");
+
+			dmUtilities.LogMessage(invoker.Name + " successfully cast So Many Bites");
 			
 			return true;
 		}

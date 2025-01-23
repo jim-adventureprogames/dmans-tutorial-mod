@@ -9,7 +9,7 @@ entityDef "modmans_weapon_1h_axe_t6"
 	flavorText		"Best weapon, good balance, finally Dungeonmans is a good game."
 	identified		false
 	hands			1
-	value			666666666666
+	value			6666666
 	attackparticle  particle_attack_weapon_slash
 
 	info1			1h
