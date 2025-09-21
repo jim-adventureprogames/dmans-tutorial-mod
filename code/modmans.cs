@@ -49,7 +49,7 @@ namespace modmans_mods
 		{
 			dmUtilities.AddStringToLog( invoker.Name + " is doing so many bites!");
 
-			dmUtilities.LogMessage(invoker.Name + " successfully cast So Many Bites");
+			dmUtilities.LogMessage(invoker.Name + " successfully cast So Many Bites!");
 			
 			return true;
 		}
@@ -79,6 +79,33 @@ namespace modmans_mods
 			
 			return true;
 			
+		}
+
+		/// <summary>
+		/// Fill a room with trigers why not?
+		/// </summary>
+		/// <param name="centerOfRoom"></param>
+		/// <param name="door"></param>
+		/// <returns></returns>
+		public static bool BuildModmansSecretRoom(dmDungeonLevel theLevel, LocValue centerOfRoom, dmSecretDoor door)
+		{
+			int iRoomID = theLevel.GetTile(centerOfRoom).iOwningRoom;
+
+			for( int x = centerOfRoom.X-3; x <= centerOfRoom.X+3; x++)
+			for (int y = centerOfRoom.Y - 3; y <= centerOfRoom.Y + 3; y++)
+			{
+				WorldTile checkTile = theLevel.GetTile(x, y);
+				if (checkTile == null ||
+				    checkTile.IsWall() ||
+				    checkTile.iTerrain != TerrainType.TT_FLOOR ||
+				    !(checkTile.IsEmpty()) ||
+				    checkTile.iOwningRoom != iRoomID)
+					continue;
+
+				theLevel.SpawnCreature( new LocValue(x,y), "triger", -1);
+			}
+
+			return true;
 		}
 	}
 }

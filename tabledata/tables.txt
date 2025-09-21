@@ -37,3 +37,20 @@ entityDef "modmans_change_armory_table"
 	
 	"mm_modmans_smarty_01,weapon,1"	0
 }
+
+
+entityDef "modmans_change_dungeon_secret_room_beginner"
+{
+    addtotable_01  table_dungeon_special_room_beginner
+    
+    modmans_mods.BuildModmansSecretRoom     2000
+    
+}
+
+entityDef "modmans_change_dungeon_secret_room_standard"
+{
+    addtotable_01  table_dungeon_special_room_standard
+
+    modmans_mods.BuildModmansSecretRoom     1000
+
+}

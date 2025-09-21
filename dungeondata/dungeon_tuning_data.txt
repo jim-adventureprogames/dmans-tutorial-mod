@@ -1,0 +1,10 @@
+entityDef "modmans_dungeon_tuning_data"
+{
+    class   dmDungeonTuningData
+    
+    wanderingMonster_minimumTicksBetweenEvents  1
+    wanderingMonster_randomTicksBetweenEvents   "1d100"
+    
+    graveyard_turnsBetweenZombieChecks          "10"
+    graveyard_numZombiesToSpawn                 "1d8+8"
+}
